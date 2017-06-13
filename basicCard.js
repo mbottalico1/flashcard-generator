@@ -1,6 +1,9 @@
 var inquirer = require('inquirer');
+var fs = require('fs');
 
-exports.BasicCard = function(front, back) {
+module.exports = BasicCard;
+
+function BasicCard(front, back) {
 	this.front = front;
 	this.back = back;
 }

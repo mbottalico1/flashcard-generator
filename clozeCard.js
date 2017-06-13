@@ -1,5 +1,9 @@
 var inquirer = require('inquirer');
+var fs = require('fs');
 
-exports.ClozeCard = function(text, cloze) {
+module.exports = ClozeCard;
 
+function ClozeCard(text, cloze) {
+	this.text = text;
+	this.cloze = cloze;
 }
