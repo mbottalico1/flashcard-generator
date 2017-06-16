@@ -8,7 +8,14 @@ var BasicCard = function(front, back) {
 	this.back = back;
 }
 
+BasicCard.prototype.print = function() {
+	console.log('front: ' + this.front);
+	console.log('back: ' + this.back);
+}
+
 var cardOne = new BasicCard('Who is the King of the North?', 'Jon Snow');
 var cardTwo = new BasicCard('What is the Mountains real name?', 'Gregor Clegane');
-var cardThree = new BasicCard('Is Jon Snows real father Eddard Stark?', 'No');
-var cardFour = new BasicCard('Valyrian Steel and Dragon glass are weapons used to defeat....', 'White Walkers');
+console.log(cardOne.front);
+console.log(cardOne.back);
+console.log(cardTwo.front);
+console.log(cardTwo.back);
