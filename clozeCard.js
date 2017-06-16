@@ -3,7 +3,7 @@ var fs = require('fs');
 
 module.exports = ClozeCard;
 
-function ClozeCard(text, cloze) {
+var ClozeCard = function(text, cloze) {
 	this.text = text;
 	this.cloze = cloze;
 }
